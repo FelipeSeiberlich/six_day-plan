@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from questionnaire_form import views as questionnaire_views
 from about import views as about_views
 
 urlpatterns = [
-    path ('about/', about_views.about_me, name = 'about'),
+    path('about/', about_views.about_me, name = 'about'),
+    path('questionnaire_form/', questionnaire_views.method_used, name = 'questionnaire'),
     path('admin/', admin.site.urls),
 ]
