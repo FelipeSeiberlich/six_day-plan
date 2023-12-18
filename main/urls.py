@@ -21,6 +21,6 @@ from about import views as about_views
 
 urlpatterns = [
     path('about/', about_views.about_me, name = 'about'),
-    path('questionnaire_form/', questionnaire_views.method_used, name = 'questionnaire'),
+    path('', questionnaire_views.method_used, name = 'questionnaire'),
     path('admin/', admin.site.urls),
 ]
